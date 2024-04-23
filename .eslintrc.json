@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["next/core-web-vitals", "eslint-config-love", "eslint-config-next", "eslint-config-prettier"],
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "n",
+    "promise",
+    "react",
+    "react-hooks",
+    "security",
+    "simple-import-sort",
+    "sonarjs"
+  ],
+  "rules": {
+    "sonarjs/no-duplicate-string": "warn",
+    "@typescript-eslint/strict-boolean-expressions": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    }
+  }
+}
